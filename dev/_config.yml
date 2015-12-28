@@ -1,0 +1,4 @@
+name: Dots Around | On Art Development
+markdown: redcarpet
+highlighter: markdown # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json"]
