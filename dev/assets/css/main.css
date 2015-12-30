@@ -355,10 +355,7 @@ th {
   padding: 0; }
 
 html {
-  font-size: 24px; }
-  @media (min-width: 800px) {
-    html {
-      font-size: 16px; } }
+  font-size: 16px; }
 
 html,
 body {
@@ -383,16 +380,9 @@ li {
   list-style-type: none; }
 
 .home {
-  background: url(../img/home-bg.png) no-repeat top center;
+  background: url(../img/bg-home.jpg) no-repeat top center;
     background-size: cover;
   height: 100%; }
-  .home .down-btn {
-    position: absolute;
-    width: 74px;
-    height: 74px;
-    background: url(../img/button-icon-down.png) no-repeat;
-    left: 47.5%;
-    bottom: -1.875rem; }
 
 .top-navigation {
   width: 100%;
@@ -436,20 +426,51 @@ li {
     font-size: 1.5rem;
     font-weight: 100;
     text-transform: capitalize;
-    margin-top: 10.5rem; }
+    margin-top: 3.5rem; }
   .wrap .title {
     font-size: 4.5rem;
     font-weight: bold;
     text-transform: uppercase; }
-  .wrap p {
+  .wrap .sub-text {
     font-size: 0.875rem;
     width: 50%;
     margin: 0 auto;
     margin-bottom: 3rem;
     font-weight: 100; }
+  .wrap .sub-line {
+    width: 20%;
+    height: 7px;
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .wrap .sub-line .left-line {
+      width: 80px;
+      height: 1px;
+      margin-top: 4px;
+      background: #f1ebe7; }
+    .wrap .sub-line .circle {
+      width: 7px;
+      height: 7px;
+      background: #e74c3c;
+      border-radius: 50%; }
+    .wrap .sub-line .right-line {
+      width: 80px;
+      height: 1px;
+      margin-top: 4px;
+      background: #f1ebe7; }
   .wrap .active-btn {
     background: #e74c3c;
-    margin-right: 1.875rem; }
+    margin-right: 1.875rem;
+    outline: 0.0625rem solid #e74c3c; }
   .wrap .pasive-btn {
     background: transparent;
-    border: 0.0625rem solid white; }
+    outline: 0.0625rem solid white; }
+    .wrap .pasive-btn:hover {
+      background: #e74c3c;
+      outline: none; }

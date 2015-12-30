@@ -1,15 +1,8 @@
 .home
-	background: url(../img/home-bg.png) no-repeat top center
+	background: url(../img/bg-home.jpg) no-repeat top center
 		size: cover
 	height: 100%
 	position:relative
-	.down-btn
-		position: absolute
-		width: 74px
-		height: 74px
-		background: url(../img/button-icon-down.png) no-repeat
-		left: 47.5%
-		bottom: -1.875rem
 
 .top-navigation
 	width: 100%
@@ -44,23 +37,47 @@
 		font-size: 1.5rem
 		font-weight: 100
 		text-transform: capitalize
-		margin-top: 10.5rem
+		margin-top: 3.5rem
+
 	.title
 		font-size: 4.5rem
 		font-weight: bold
 		text-transform: uppercase
-	p
+	.sub-text
 		font-size: 0.875rem
 		width: 50%
 		margin: 0 auto
 		margin-bottom: 3rem
 		font-weight: 100
-
+	.sub-line
+		width: 20%
+		height: 7px
+		margin: 50px auto
+		display: flex
+		justify-content: space-between
+		.left-line
+			width: 80px
+			height: 1px
+			margin-top: 4px
+			background: $sub-line-light
+		.circle
+			width: 7px
+			height: 7px
+			background: $sub-line-dot-default
+			border-radius: 50%
+		.right-line
+			width: 80px
+			height: 1px
+			margin-top: 4px
+			background: $sub-line-light
 	.active-btn
 		background: $active-color
 		margin-right: 1.875rem
+		outline: 0.0625rem solid $active-color
 
 	.pasive-btn
 		background: rgba(0,0,0,.0)
-		border: 0.0625rem solid white
-
+		outline: 0.0625rem solid white
+		&:hover
+			background: $active-color
+			outline: none
